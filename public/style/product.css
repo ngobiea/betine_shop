@@ -1,0 +1,68 @@
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+.alert {
+  padding: 10px;
+  margin-bottom: 20px;
+  margin: 0 23%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.alert-danger {
+  color: #fff;
+  background-color: #ff0000;
+}
+.alert-success{
+  color: #fff;
+  background-color: #4CAF50;
+}
+.product{
+    display: flex;
+    margin: 5% 5% 5% 5%;
+}
+.image-container {
+    width: 50%;
+    height: 35rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image-container img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.text-container{
+  width: 50%;
+
+}
+.text-container h1, 
+.text-container p, 
+.text-container form, 
+.text-container h3,
+.text-container span{
+  margin-left: 5rem;
+  margin-bottom: 1rem;
+}
+.seller{
+  margin-top: 1rem;
+}
+.price{
+  margin-bottom: 3rem;
+}
+.quantity{
+  color: gray;
+  margin: 2rem 0;
+}
+.sub{
+  margin-top: 1rem;
+}
+#quantity{
+  width: 2.5rem;
+}
+

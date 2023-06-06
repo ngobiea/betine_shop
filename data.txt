@@ -1,0 +1,36 @@
+
+
+   $table->increments('id');
+            $table->string('buyer_email');
+            $table->integer('quantity');
+            $table->integer('total_price');
+            $table->date('order_date');
+            $table->foreign('buyer_email')->references('email')->on('buyers')->onDelete('cascade');
+            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
+            $table->timestamps();
+
+
+            $table->increments('id');
+            $table->unsignedInteger('product_id');
+            $table->string('buyer_email');
+            $table->integer('quantity');
+            $table->foreign('buyer_email')->references('email')->on('buyers')->onDelete('cascade');
+            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
+            $table->timestamps();
+
+
+
+                 $table->increments('id');
+            $table->unsignedInteger('order_id');
+            $table->unsignedInteger('product_id');
+            $table->integer('quantity');
+            $table->foreign('order_id')->references('id')->on('orders')->onDelete('cascade');
+            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
+            $table->timestamps();
+
+               $table->increments('id');
+            $table->string('buyer_email');
+            $table->date('order_date');
+            $table->integer('total_cost');
+            $table->foreign('buyer_email')->references('email')->on('buyers')->onDelete('cascade');
+            $table->timestamps();
